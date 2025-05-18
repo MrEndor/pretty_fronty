@@ -10,7 +10,7 @@
 </head>
 <body>
 <main class="main base_container">
-    <section class="nav_container">
+    <section class="nav_container menu_block" id="menu_block">
         <nav class="nav_bar base_container">
             <div class="items_container">
                 <div class="link_container">
@@ -62,7 +62,7 @@
                         </div>
                         <div class="card_row_container">
                             <div class="card_date_container">
-                                <h2 class="card_date">12 Feb 2020</h2>
+                                <h2 class="card_date">12 Feb 2021</h2>
                             </div>
                             <div class="card_separator_container">
                                 <h2 class="card_separator">|</h2>
@@ -85,7 +85,7 @@
                         </div>
                         <div class="card_row_container">
                             <div class="card_date_container">
-                                <h2 class="card_date">12 Feb 2020</h2>
+                                <h2 class="card_date">12 Feb 2022</h2>
                             </div>
                             <div class="card_separator_container">
                                 <h2 class="card_separator">|</h2>
@@ -108,7 +108,7 @@
                         </div>
                         <div class="card_row_container">
                             <div class="card_date_container">
-                                <h2 class="card_date">12 Feb 2020</h2>
+                                <h2 class="card_date">12 Feb 2023</h2>
                             </div>
                             <div class="card_separator_container">
                                 <h2 class="card_separator">|</h2>
@@ -138,7 +138,7 @@
                 <div class="news_tuple">
                     <div class="news_image_container">
                         <img class="news_image"
-                             src="https://images.unsplash.com/photo-1742407795182-144225af8ebe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                             src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg"
                              alt="news_img">
                     </div>
                     <div class="news_description_container base_container">
@@ -158,7 +158,7 @@
                 <div class="news_tuple">
                     <div class="news_image_container">
                         <img class="news_image"
-                             src="https://images.unsplash.com/photo-1742407795182-144225af8ebe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                             src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg"
                              alt="news_img">
                     </div>
                     <div class="news_description_container base_container">
@@ -178,7 +178,7 @@
                 <div class="news_tuple">
                     <div class="news_image_container">
                         <img class="news_image"
-                             src="https://images.unsplash.com/photo-1742407795182-144225af8ebe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                             src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg"
                              alt="news_img">
                     </div>
                     <div class="news_description_container base_container">
@@ -198,7 +198,7 @@
                 <div class="news_tuple">
                     <div class="news_image_container">
                         <img class="news_image"
-                             src="https://images.unsplash.com/photo-1742407795182-144225af8ebe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                             src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg"
                              alt="news_img">
                     </div>
                     <div class="news_description_container base_container">
@@ -218,43 +218,19 @@
             </div>
         </div>
     </section>
-    <section class="feedback_screen base_container">
-        <div class="feedback_container base_container">
-            <div class="feedback_header base_container">
-                <h2 class="feedback_naming">Contact me</h2>
-            </div>
-            <div class="feedback_data base_container">
-                <div class="form_container base_container">
-                    <form class="form" id="contact">
-                        <div class="input_container">
-                            <div class="input_row">
-                                <div class="input_label">
-                                    <label class="input_naming" for="first_name">Name</label>
-                                    <input class="input_field" type="text" id="first_name" name="first_name"
-                                           placeholder="Enter your first name">
-                                </div>
-                                <div class="input_label">
-                                    <label class="input_naming" for="email">Email</label>
-                                    <input class="input_field" type="email" id="email" name="email"
-                                           placeholder="Enter your email" required autocomplete="email">
-                                </div>
-                            </div>
-                            <div class="input_row">
-                                <div class="input_label input_message">
-                                    <label class="input_naming" for="message">Message</label>
-                                    <textarea class="input_field" id="message" name="message"
-                                              placeholder="Enter your message" required minlength="15"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="submit_container base_container">
-                            <button class="submit_button" type="submit">Submit</button>
-                        </div>
-                    </form>
+    <div class="gallery_popup">
+        <div class="popup_content">
+            <span class="close_btn">&times;</span>
+            <div class="popup_navigation">
+                <button class="nav_btn prev_btn" disabled>&larr;</button>
+                <div class="popup_image_container">
+                    <img src="" alt="" class="popup_image">
+                    <div class="popup_image_counter"></div>
                 </div>
+                <button class="nav_btn next_btn">&rarr;</button>
             </div>
         </div>
-    </section>
+    </div>
     <footer class="footer">
         <div class="footer_container base_container">
             <div class="footer_logos_container">
@@ -290,5 +266,11 @@
         </div>
     </footer>
 </main>
+<script src="scripts/gallery.js"></script>
+<script src="scripts/popup.js"></script>
+<script src="scripts/notification.js"></script>
+<script src="scripts/countdown.js"></script>
+<script src="scripts/fixed_header.js"></script>
+<script src="scripts/gear.js"></script>
 </body>
 </html>
